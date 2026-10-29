@@ -1,0 +1,10 @@
+{
+  "dataset_id": null,
+  "status": "to_be_defined",
+  "source": null,
+  "version": null,
+  "license": null,
+  "local_path": "data/raw/",
+  "checksum": null,
+  "protocol": "docs/01_Benchmark_Protocol.md"
+}

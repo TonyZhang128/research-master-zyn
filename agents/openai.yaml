@@ -1,0 +1,6 @@
+interface:
+  display_name: "research-master-zyn"
+  short_description: "显式调用后询问版本与特殊要求，初始化空科研仓库并导入已有研究文档"
+  default_prompt: "使用 $research-master-zyn，在我指定的位置新建科研项目，并初始化目录与科研文档。"
+policy:
+  allow_implicit_invocation: false
