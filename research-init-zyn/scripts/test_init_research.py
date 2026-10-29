@@ -300,7 +300,7 @@ def create_downloads_repository(target: Path) -> Path:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--create-test-repo", nargs="?", const=DOWNLOADS / "research-master-zyn-test",
+    parser.add_argument("--create-test-repo", nargs="?", const=DOWNLOADS / "research-init-zyn-test",
                         type=Path, help="测试通过后在 Downloads 下生成并保留一个新测试仓库")
     args = parser.parse_args()
     suite = unittest.defaultTestLoader.loadTestsFromModule(sys.modules[__name__])

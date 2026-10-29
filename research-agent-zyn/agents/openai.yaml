@@ -1,0 +1,6 @@
+interface:
+  display_name: "research-agent-zyn"
+  short_description: "明确调用后按任务调度科研角色，完成独立审查、实验执行与证据归档"
+  default_prompt: "使用 $research-agent-zyn，在当前科研项目中按需组织子智能体完成我指定的研究任务。"
+policy:
+  allow_implicit_invocation: false

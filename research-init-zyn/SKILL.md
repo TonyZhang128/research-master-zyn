@@ -1,9 +1,11 @@
 ---
-name: research-master-zyn
-description: 仅在用户明确调用 $research-master-zyn 或明确点名使用本 skill 时，在指定位置通过 uv init 创建近乎空白的科研仓库，设置项目结构、科研文档与项目规则，并可导入已有研究文档。普通科研讨论和未点名的初始化请求不触发。
+name: research-init-zyn
+description: 仅在用户明确调用 $research-init-zyn 或明确点名使用本 skill 时，在指定位置通过 uv init 创建近乎空白的科研仓库，设置项目结构、科研文档与项目规则，并可导入已有研究文档。普通科研讨论和未点名的初始化请求不触发。
 ---
 
 # 科研项目启动
+
+开发阶段：本 skill 仅作为项目源码保存，不安装或链接到全局 skills 目录。
 
 只有一种初始化：创建科研结构和相关文件，不生成算法、合成数据、方法、实验或演示仓库。完整基础目录（含空目录）、空 `__init__.py` 与静态文件都直接来自 `assets/`，修改结构时编辑模板树，不在脚本中维护另一份目录清单。`pyproject.toml`、`.python-version`、`uv.lock` 和 `.git/` 动态生成。目录结构见 [README 模板](assets/README.md)，文档撰写与科研工程规则见 [AGENTS 模板](assets/AGENTS.md)。
 
@@ -67,4 +69,4 @@ description: 仅在用户明确调用 $research-master-zyn 或明确点名使用
 
 ## 维护测试
 
-`scripts/test_init_research.py` 默认在临时目录运行功能测试；显式添加 `--create-test-repo` 时，还会在 `/Users/zinnia/Downloads/research-master-zyn-test` 创建并保留空科研测试仓库。也可为该选项指定 Downloads 下的新路径。已有目标拒绝覆盖；不要为重复测试清空用户仓库。这个测试调用不在 skill 内保存演示仓库或创建算法。
+`scripts/test_init_research.py` 默认在临时目录运行功能测试；显式添加 `--create-test-repo` 时，还会在 `/Users/zinnia/Downloads/research-init-zyn-test` 创建并保留空科研测试仓库。也可为该选项指定 Downloads 下的新路径。已有目标拒绝覆盖；不要为重复测试清空用户仓库。这个测试调用不在 skill 内保存演示仓库或创建算法。

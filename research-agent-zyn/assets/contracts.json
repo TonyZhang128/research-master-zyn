@@ -1,0 +1,32 @@
+{
+  "roles": {
+    "research_design": "研究方向、问题、假设、数学方法、基准与实验设计",
+    "literature_research": "论文与方向检索、来源核实、方法比较和研究缺口",
+    "data_quality": "数据来源、结构、标签、分组划分和处理质量检查",
+    "implementation_execution": "算法实现、单元测试、运行配置与受审查约束的执行",
+    "research_review": "独立审查实际代码、配置、数据与协议；有缺陷则阻断",
+    "result_analysis": "运行证据核验、统计推断、失败分析与实验归档"
+  },
+  "documents": {
+    "docs/00_Research_Overview.md": {
+      "research_design": ["Research Goals", "Research Questions", "Hypotheses", "TODO", "Milestones"],
+      "result_analysis": ["Current Progress"]
+    },
+    "docs/01_Benchmark_Protocol.md": {
+      "research_design": ["*"],
+      "data_quality": ["Dataset", "Preprocessing", "Data Split"]
+    },
+    "docs/02_Related_Work.md": {"literature_research": ["*"]},
+    "docs/04_Research_Findings.md": {"result_analysis": ["*"]}
+  },
+  "method_sections": {
+    "research_design": ["算法动机", "数学原理", "模型架构", "创新点与局限", "实验索引"],
+    "implementation_execution": ["实现细节"]
+  },
+  "experiment_sections": {
+    "research_design": ["目的与判定标准", "协议与配置"],
+    "research_review": ["启动前审查"],
+    "implementation_execution": ["运行信息"],
+    "result_analysis": ["结果", "分析", "结论与后续行动", "Run "]
+  }
+}

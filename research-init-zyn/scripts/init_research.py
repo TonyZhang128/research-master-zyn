@@ -131,7 +131,7 @@ def initialize(target: Path, *, title: str, question: str, objective: str,
         raise ValueError("--name 必须由小写字母、数字及单个连字符组成")
     runtime = check_dependencies(python)
     # 命令、模板或导入失败时只清理临时目录，不发布半成品或触碰用户原文档。
-    with tempfile.TemporaryDirectory(prefix="research-master-zyn-") as temporary:
+    with tempfile.TemporaryDirectory(prefix="research-init-zyn-") as temporary:
         staging = Path(temporary) / "repository"
         initialize_repository(staging, name, runtime)
         copy_project_files(staging, title=title, question=question, objective=objective,
